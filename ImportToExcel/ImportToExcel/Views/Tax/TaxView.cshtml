@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "TaxView";
+}
+
+<h2>
+    Index</h2>
+@using (Html.BeginForm("TaxView","Tax", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{ 
+<input type="file" name="file" />
+    <input type="submit" value="OK" />
+}  
